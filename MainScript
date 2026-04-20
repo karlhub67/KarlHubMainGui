@@ -19,5 +19,5 @@ loadstring(HttpGet(game, URL))()
 --[[
 GAME SUPPORT:
 Plant Brainrot Simulator
-
+credits to: https://www.youtube.com/@OYBloxYT
 ]]
