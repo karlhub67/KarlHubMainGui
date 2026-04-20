@@ -5,12 +5,12 @@ local Games: {[number]: string} = loadstring(
     HttpGet(game, "https://raw.githubusercontent.com/karlhub67/script-list1/refs/heads/main/LISTSCRIPT")
 )() :: any
 
-print("Checking ID:", GameId)
+print("Thanks you for using!!")
 
 local URL: string? = Games[GameId]
 
 if not URL then
-    warn("Thank you for using")
+    warn("No script in this game LOL")
     return
 end
 
