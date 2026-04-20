@@ -1,0 +1,23 @@
+local HttpGet = game.HttpGet
+local GameId: number = game.PlaceId -- safer
+
+local Games: {[number]: string} = loadstring(
+    HttpGet(game, "https://raw.githubusercontent.com/karlhub67/script-list1/refs/heads/main/LISTSCRIPT")
+)() :: any
+
+print("Checking ID:", GameId)
+
+local URL: string? = Games[GameId]
+
+if not URL then
+    warn("NO SCRIPT EXIST FOR THIS GAME:", GameId)
+    return
+end
+
+loadstring(HttpGet(game, URL))()
+
+--[[
+GAME SUPPORT:
+Plant Brainrot Simulator
+
+]]
