@@ -10,7 +10,7 @@ print("Checking ID:", GameId)
 local URL: string? = Games[GameId]
 
 if not URL then
-    warn("NO SCRIPT EXIST FOR THIS GAME:", GameId)
+    warn("Thank you for using")
     return
 end
 
